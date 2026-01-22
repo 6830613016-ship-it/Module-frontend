@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 0.5em;
+}
+
+.hamburger {
+    display: none;
+    translate: scale;
+}
+
+.drawer-menu {
+    display: none;
+    position: fixed;
+    right: 0;
+    background: black;
+
+    /* .first-link {
+        color: white;
+        text-decoration: dotted;
+    } */
+
+    .menu-item {
+        padding: 0.3em 1em;
+        border: 2px solid white;
+        border-radius: 4px;
+        margin: 0.5em;
+        color: white;
+    }
+
+    .exit {
+        background: lightcoral;
+    }
+
+    .exit:hover {
+        box-shadow: 2px 2px 2px white;
+    }
+}
+
+/* Mobile CSS here */
+@media (max-width: 600px) {
+    ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+
+    .line {
+        width: 2em;
+        height: 4px;
+        background: black;
+        margin-bottom: 4px;
+    }
+
+}
